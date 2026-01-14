@@ -7,10 +7,10 @@ import { Gamepad2Icon, HomeIcon, FileTextIcon, BriefcaseIcon, UserIcon } from "l
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { path: "/", name: "Home", icon: <HomeIcon size={20} /> },
-  { path: "/blog", name: "Blog", icon: <FileTextIcon size={20} /> },
-  { path: "/works", name: "Works", icon: <BriefcaseIcon size={20} /> },
-  { path: "/about", name: "About", icon: <UserIcon size={20} /> },
+  { path: "/", name: "首页", icon: <HomeIcon size={20} /> },
+  { path: "/blog", name: "博客", icon: <FileTextIcon size={20} /> },
+  { path: "/works", name: "作品", icon: <BriefcaseIcon size={20} /> },
+  { path: "/about", name: "关于", icon: <UserIcon size={20} /> },
 ];
 
 const variants = {
@@ -74,7 +74,7 @@ export function NavMenu() {
           className="pixel-button rounded-none flex flex-col items-center justify-center px-3 py-2 h-14 w-20 sm:w-24 bg-white dark:bg-foreground border-black hover:bg-primary/80"
         >
           <span className="mb-1"><Gamepad2Icon size={20} /></span>
-          <span className="text-xs sm:text-sm font-bold">Play</span>
+          <span className="text-xs sm:text-sm font-bold">游戏</span>
         </Link>
       </motion.div>
     </nav>

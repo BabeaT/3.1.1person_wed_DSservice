@@ -1,6 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import dynamic from 'next/dynamic';
 import { Providers } from "./providers";
 import { PixelHeader } from "@/components/pixel-header";
@@ -10,8 +9,6 @@ const CustomCursor = dynamic(() => import('@/components/custom-cursor'), {
   ssr: false,
   loading: () => null
 });
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pixel Portfolio - Creative Developer",
@@ -24,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="zh-CN" suppressHydrationWarning>
+      <body>
         <Providers>
           <CustomCursor />
           <PixelHeader />

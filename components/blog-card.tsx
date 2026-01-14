@@ -44,7 +44,7 @@ export function BlogCard({ title, excerpt, slug, date, imageUrl, readTime, index
             </span>
             <span className="flex items-center gap-1">
               <Clock size={16} />
-              {readTime} min read
+              {readTime}分钟阅读
             </span>
           </div>
           
@@ -52,7 +52,7 @@ export function BlogCard({ title, excerpt, slug, date, imageUrl, readTime, index
           <p className="text-muted-foreground line-clamp-3 mb-4 flex-grow">{excerpt}</p>
           
           <div className="bg-primary text-black font-bold px-4 py-2 inline-block border-2 border-black mt-auto">
-            Read More
+            阅读更多
           </div>
         </div>
       </Link>

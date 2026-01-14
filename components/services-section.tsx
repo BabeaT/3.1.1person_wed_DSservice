@@ -5,23 +5,23 @@ import { CodeIcon, PaintbrushIcon, LayoutIcon, RocketIcon } from "lucide-react";
 
 const services = [
   {
-    title: "Web Development",
-    description: "Custom websites built with modern technologies for optimal performance and user experience.",
+    title: "网页开发",
+    description: "使用现代技术构建的定制网站，提供最佳性能和用户体验。",
     icon: <CodeIcon className="h-10 w-10" />,
   },
   {
-    title: "UI/UX Design",
-    description: "Intuitive and visually appealing designs that create meaningful experiences for users.",
+    title: "UI/UX设计",
+    description: "直观且视觉吸引人的设计，为用户创造有意义的体验。",
     icon: <PaintbrushIcon className="h-10 w-10" />,
   },
   {
-    title: "Brand Identity",
-    description: "Cohesive visual systems that communicate your brand's unique story and values.",
+    title: "品牌形象",
+    description: "连贯的视觉系统，传达您品牌独特的故事和价值观。",
     icon: <LayoutIcon className="h-10 w-10" />,
   },
   {
-    title: "Digital Marketing",
-    description: "Strategic campaigns that increase visibility and drive engagement with your target audience.",
+    title: "数字营销",
+    description: "战略性营销活动，提高可见度并推动与目标受众的互动。",
     icon: <RocketIcon className="h-10 w-10" />,
   },
 ];
@@ -29,7 +29,7 @@ const services = [
 export function ServicesSection() {
   return (
     <section className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">My Services</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">我的服务</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((service, index) => (

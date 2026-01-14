@@ -16,11 +16,11 @@ export function PixelFooter() {
   ];
 
   const footerLinks = [
-    { name: "Home", href: "/" },
-    { name: "Blog", href: "/blog" },
-    { name: "Works", href: "/works" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "首页", href: "/" },
+    { name: "博客", href: "/blog" },
+    { name: "作品", href: "/works" },
+    { name: "关于", href: "/about" },
+    { name: "联系", href: "/contact" },
   ];
 
   return (
@@ -33,12 +33,12 @@ export function PixelFooter() {
               <h3 className="text-xl font-bold">PixelPortfolio</h3>
             </div>
             <p className="text-lg">
-              A pixel-perfect blog and portfolio showcasing my creative works and thoughts.
+              一个像素级完美的博客和作品集，展示我的创意作品和思考。
             </p>
           </div>
           
           <div className="space-y-4">
-            <h3 className="text-lg font-bold px-4 py-2 bg-black text-primary inline-block">Navigation</h3>
+            <h3 className="text-lg font-bold px-4 py-2 bg-black text-primary inline-block">导航</h3>
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.name}>
@@ -55,7 +55,7 @@ export function PixelFooter() {
           </div>
           
           <div className="space-y-4">
-            <h3 className="text-lg font-bold px-4 py-2 bg-black text-primary inline-block">Connect</h3>
+            <h3 className="text-lg font-bold px-4 py-2 bg-black text-primary inline-block">联系我</h3>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <motion.a
@@ -72,7 +72,7 @@ export function PixelFooter() {
               ))}
             </div>
             <p className="text-lg mt-4">
-              Let's connect and create something awesome together!
+              让我们一起联系并创造一些令人惊叹的东西！
             </p>
           </div>
         </div>
@@ -81,10 +81,10 @@ export function PixelFooter() {
         
         <div className="text-center">
           <p className="text-lg">
-            © {currentYear} PixelPortfolio. All rights reserved.
+            © {currentYear} PixelPortfolio. 保留所有权利。
           </p>
           <p className="text-sm mt-2">
-            Crafted with 🍔 and pixel love
+            用 🍔 和像素之爱精心制作
           </p>
         </div>
       </div>
