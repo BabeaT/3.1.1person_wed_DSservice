@@ -16,7 +16,7 @@ const CustomCursor = () => {
 
   return (
     <div 
-      className="fixed w-8 h-8 pointer-events-none z-50"
+      className="fixed w-8 h-8 pointer-events-none z-50 flex items-center justify-center"
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
